@@ -1,3 +1,6 @@
+"""This is a main file our app. In this file we have all route to all website
+ All application is creat in Flask framework, and use MySQL Data Base"""
+
 from flask import Flask , render_template, url_for, request
 import database.create_accond as dbcreat
 import database.login_user as dblog
