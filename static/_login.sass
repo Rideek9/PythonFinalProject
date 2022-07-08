@@ -1,0 +1,72 @@
+$height-element: 35px
+$width-txt-element: 70%
+$color-txt: rgb(75, 75, 75)
+
+.wrapper
+  background-color: #30799B
+  height: 100vh
+  width: 100vw
+  position: relative
+  .login
+    min-width: 500px
+    min-height: 350px
+    display: flex
+    position: absolute
+    left: 50%
+    top: 50%
+    transform: translate(-50%,-50%)
+    flex-direction: column
+    background-color: #b9cdd9
+    border-radius: 30px
+    box-shadow: 0 0 30px #fff
+    .error
+      position: relative
+      top: 40px
+      font-size: 1.5rem
+      text-align: center
+      color: darkred
+      text-transform: uppercase
+    .userLogin
+      margin-top: 10px
+      display: flex
+      width: 100%
+      flex-direction: column
+      position: absolute
+      top: 50%
+      transform: translateY(-50%)
+      label
+        width: 50%
+        font-size: 2rem
+        text-transform: uppercase
+        text-align: center
+        margin: 10px auto 0 auto
+        font-weight: lighter
+      input
+        font-size: 2rem
+        text-align: center
+        width: $width-txt-element
+        height: $height-element
+        margin: 0 auto
+        border-radius: 30px
+      .buttonlogin
+        font-size: 2rem
+        width: 50%
+        height: $height-element
+        margin: 15px auto
+        border-radius: 30px
+        background: #30799B
+
+    .userElement
+      display: flex
+      flex-direction: column
+      position: absolute
+      bottom: 10px
+      left: 50%
+      transform: translateX(-50%)
+      a
+        font-size: 1.5rem
+        text-decoration: none
+        text-align: center
+        text-transform: uppercase
+        margin: 5px
+        color: #444444
