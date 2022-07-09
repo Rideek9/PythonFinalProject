@@ -74,4 +74,59 @@
         margin: 5px;
         color: #444444; }
 
+.wrapper {
+  position: relative; }
+
+div a i {
+  color: #fff;
+  margin: 30px;
+  font-size: 2rem; }
+
+.conteiner {
+  position: absolute;
+  width: 80%;
+  height: 80%;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%); }
+  .conteiner h1 {
+    font-size: 3rem;
+    text-align: center;
+    color: #fff;
+    margin-bottom: 50px; }
+  .conteiner .rejestration {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin: 0 auto; }
+    .conteiner .rejestration label {
+      font-size: 2rem;
+      display: block;
+      text-align: center;
+      margin-bottom: 6px;
+      margin-top: 12px;
+      color: #fff;
+      text-transform: uppercase;
+      font-weight: lighter; }
+    .conteiner .rejestration input {
+      font-size: 2rem;
+      padding: 5px;
+      width: 100%;
+      text-align: center;
+      border-radius: 20px; }
+    .conteiner .rejestration .buttonRegistration {
+      display: block;
+      font-size: 2rem;
+      padding: 5px 20px;
+      background-color: #68c0b9;
+      position: absolute;
+      margin-top: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 15px;
+      text-transform: uppercase;
+      cursor: pointer; }
+    .conteiner .rejestration .buttonRegistration:hover {
+      background-color: red; }
+
 /*# sourceMappingURL=style.css.map */
