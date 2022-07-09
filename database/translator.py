@@ -27,7 +27,10 @@ def user(id):
 
 
 def translator(word,la1,la2):
-    trans = Translator()
-    element = trans.translate(word,src=la1,dest=la2)
-    return element.text
+    if word != "":
+        trans = Translator()
+        element = trans.translate(word,src=la1,dest=la2)
+        return element.text
+    else:
+        return 'Podaj słowo'
 

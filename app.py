@@ -32,6 +32,12 @@ def login(id):
     id_user = id
     elements = Trans.user(id)
     name = elements[3]
+    if request.method == 'POST':
+        lan1 = request.form['firstOpt']
+        lan2 = request.form['secondOpdt']
+        word = request.form['word']
+        transWord = Trans.translator(word,lan1,lan2)
+        return render_template('user.html', name = name, transElement= transWord, wordElement = word)
     return render_template('user.html', name = name)
 
 

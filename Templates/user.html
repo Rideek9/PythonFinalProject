@@ -14,26 +14,26 @@
                 </div>
                 <div class="info">
                     <p>Witaj <span>{{name}}</span></p>
-                    <button id="out">Wyloguj</button>
+                    <a href="/">Wyloguj</a>
                 </div>
             </div>
             <div class="translator">
-                <form action="">
+                <form action="" method="POST">
                     <div class="element">
                         <select name="firstOpt" id="firstOpt">
-                            <option value="">Polski</option>
-                            <option value="">Angielski</option>
+                            <option value="pl">Polski</option>
+                            <option value="en">Angielski</option>
                         </select>
-                        <input type="text">
+                        <input type="text" id="word" name="word" placeholder="{{wordElement}}">
                     </div>
                     <div class="element">
                         <select name="secondOpdt" id="secondOpdt">
-                            <option value="">Polski</option>
-                            <option value="">Angielski</option>
+                            <option value="pl">Polski</option>
+                            <option value="en">Angielski</option>
                         </select>
-                        <p class="element">a</p>
+                        <div class="wordElement">{{transElement}}</div>
                     </div>
-                    <button type="submit">Dodaj słowo</button>
+                    <button type="submit" id="tlumacz">tłumacz</button>
                 </form>
 
             </div>

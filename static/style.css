@@ -179,14 +179,16 @@ div a i {
       .nav .info p span {
         text-transform: capitalize;
         font-size: 2rem; }
-    .nav .info button {
+    .nav .info a {
       margin: 0 30px;
       font-size: 2rem;
-      padding: 10px 5px;
+      height: 2rem;
+      line-height: 80px;
+      text-decoration: none;
       text-transform: uppercase;
       background-color: transparent;
       color: #ffffff; }
-    .nav .info button:active {
+    .nav .info a:active {
       color: #000000; }
 
 .translator {
@@ -198,8 +200,7 @@ div a i {
     width: 60%;
     height: 200px;
     margin: 0 auto;
-    position: relative;
-    background-color: green; }
+    position: relative; }
     .translator form .element {
       margin: 0 30px; }
       .translator form .element select {
@@ -210,10 +211,13 @@ div a i {
         width: 300px;
         height: 80px;
         text-align: center; }
-      .translator form .element p {
+      .translator form .element input::placeholder {
+        color: #a2a2a2; }
+      .translator form .element .wordElement {
         display: block;
         font-size: 2rem;
         width: 300px;
+        height: 80px;
         line-height: 80px;
         background-color: #fff;
         text-align: center; }
