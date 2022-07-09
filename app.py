@@ -3,6 +3,7 @@ import database.create_accond as dbcreat
 import database.login_user as dblog
 import database.registration as dbreg
 import database.conectDB as CDB
+import database.translator as Trans
 
 app = Flask(__name__)
 
@@ -29,7 +30,9 @@ def index_error(error):
 @app.route('/user/id<id>', methods = ['GET','POST'])
 def login(id):
     id_user = id
-    return render_template('user.html', name = id)
+    elements = Trans.user(id)
+    name = elements[3]
+    return render_template('user.html', name = name)
 
 
 @app.route('/login', methods = ['GET', 'POST'])

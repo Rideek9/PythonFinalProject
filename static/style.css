@@ -144,4 +144,86 @@ div a i {
     .conteiner .rejestration .userRejstration .buttonRegistration:hover {
       background-color: red; }
 
+.nav {
+  display: flex;
+  flex-direction: row;
+  height: 80px;
+  background-color: rgba(0, 0, 0, 0.2);
+  position: relative; }
+  .nav .menu {
+    width: 60%;
+    position: relative; }
+    .nav .menu button {
+      margin: 0 30px;
+      font-size: 2rem;
+      padding: 10px 5px;
+      position: relative;
+      top: 50%;
+      transform: translateY(-50%);
+      text-transform: uppercase;
+      background-color: transparent;
+      color: #ffffff; }
+    .nav .menu button:active {
+      color: #000000; }
+  .nav .info {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    right: 0; }
+    .nav .info p {
+      margin: 0 30px;
+      font-size: 2rem;
+      text-transform: uppercase;
+      color: #ffffff;
+      line-height: 80px; }
+      .nav .info p span {
+        text-transform: capitalize;
+        font-size: 2rem; }
+    .nav .info button {
+      margin: 0 30px;
+      font-size: 2rem;
+      padding: 10px 5px;
+      text-transform: uppercase;
+      background-color: transparent;
+      color: #ffffff; }
+    .nav .info button:active {
+      color: #000000; }
+
+.translator {
+  margin: 50px auto;
+  width: 80%; }
+  .translator form {
+    display: flex;
+    flex-direction: row;
+    width: 60%;
+    height: 200px;
+    margin: 0 auto;
+    position: relative;
+    background-color: green; }
+    .translator form .element {
+      margin: 0 30px; }
+      .translator form .element select {
+        margin: 10px 0;
+        font-size: 1.5rem; }
+      .translator form .element input {
+        font-size: 2rem;
+        width: 300px;
+        height: 80px;
+        text-align: center; }
+      .translator form .element p {
+        display: block;
+        font-size: 2rem;
+        width: 300px;
+        line-height: 80px;
+        background-color: #fff;
+        text-align: center; }
+    .translator form button {
+      position: absolute;
+      height: 30px;
+      padding: 5px 10px;
+      font-size: 2rem;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%); }
+
 /*# sourceMappingURL=style.css.map */

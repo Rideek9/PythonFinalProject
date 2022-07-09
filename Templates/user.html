@@ -3,8 +3,41 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
+    <link rel="stylesheet" href="/static/style.css">
 </head>
 <body>
-    <h1>Witaj {{ name }} jesteś zalogowany</h1>
+    <div class="wrapper">
+            <div class="nav">
+                <div class="menu">
+                    <button id="translator">Translator</button>
+                    <button id="fiszki">Fiszki</button>
+                </div>
+                <div class="info">
+                    <p>Witaj <span>{{name}}</span></p>
+                    <button id="out">Wyloguj</button>
+                </div>
+            </div>
+            <div class="translator">
+                <form action="">
+                    <div class="element">
+                        <select name="firstOpt" id="firstOpt">
+                            <option value="">Polski</option>
+                            <option value="">Angielski</option>
+                        </select>
+                        <input type="text">
+                    </div>
+                    <div class="element">
+                        <select name="secondOpdt" id="secondOpdt">
+                            <option value="">Polski</option>
+                            <option value="">Angielski</option>
+                        </select>
+                        <p class="element">a</p>
+                    </div>
+                    <button type="submit">Dodaj słowo</button>
+                </form>
+
+            </div>
+    </div>
+
 </body>
 </html>
