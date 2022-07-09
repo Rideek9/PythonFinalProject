@@ -230,4 +230,21 @@ div a i {
       left: 50%;
       transform: translateX(-50%); }
 
+.list_element {
+  width: 20%;
+  margin: 0 auto;
+  list-style: none; }
+  .list_element h1 {
+    font-size: 2.2rem;
+    text-transform: uppercase;
+    color: #fff;
+    text-align: center;
+    margin-bottom: 15px; }
+  .list_element li {
+    font-size: 2rem;
+    text-align: center;
+    margin: 5px 0;
+    text-transform: uppercase;
+    color: #fff; }
+
 /*# sourceMappingURL=style.css.map */

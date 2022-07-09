@@ -10,7 +10,7 @@
             <div class="nav">
                 <div class="menu">
                     <button id="translator">Translator</button>
-                    <button id="fiszki">Fiszki</button>
+<!--                <button id="fiszki">Fiszki</button>-->
                 </div>
                 <div class="info">
                     <p>Witaj <span>{{name}}</span></p>
@@ -24,7 +24,7 @@
                             <option value="pl">Polski</option>
                             <option value="en">Angielski</option>
                         </select>
-                        <input type="text" id="word" name="word" placeholder="{{wordElement}}">
+                        <input type="text" id="word" name="word" value="{{wordElement}}">
                     </div>
                     <div class="element">
                         <select name="secondOpdt" id="secondOpdt">
@@ -37,6 +37,12 @@
                 </form>
 
             </div>
+            <ul class="list_element">
+                <h1>Twoje poznane słowa</h1>
+                {% for element in element_list %}
+                <li class="element">{{element}}</li>
+                {% endfor %}
+            </ul>
     </div>
 
 </body>

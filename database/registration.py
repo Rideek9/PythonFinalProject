@@ -1,6 +1,8 @@
 import mysql.connector
 from flask import Flask , render_template, url_for, request, redirect
 import database.conectDB as CDB
+import database.add_to_base as ADT
+
 
 mydb = CDB.connect()
 
@@ -13,6 +15,7 @@ def creat_user(email,password,name):
     mycursor.execute(add,val)
     mydb.commit()
 
+
 def user_registration(passwordOne,passswordSecond,email,name):
         if passwordOne != passswordSecond:
             return render_template('registration.html' , error = 'Hasła nie są takie same' )
@@ -24,4 +27,5 @@ def user_registration(passwordOne,passswordSecond,email,name):
             return render_template('registration.html', error='Podaj imię')
         else:
             creat_user(email,passwordOne,name)
+            ADT.add_to_base(email)
             return redirect(url_for('index_error', error= "account_created"))

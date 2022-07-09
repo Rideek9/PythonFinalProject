@@ -4,6 +4,7 @@ import database.login_user as dblog
 import database.registration as dbreg
 import database.conectDB as CDB
 import database.translator as Trans
+import database.add_to_base as ATB
 
 app = Flask(__name__)
 
@@ -29,16 +30,18 @@ def index_error(error):
 
 @app.route('/user/id<id>', methods = ['GET','POST'])
 def login(id):
-    id_user = id
     elements = Trans.user(id)
-    name = elements[3]
+    # name = elements[3]
     if request.method == 'POST':
         lan1 = request.form['firstOpt']
         lan2 = request.form['secondOpdt']
         word = request.form['word']
+        # name = elements[3]
         transWord = Trans.translator(word,lan1,lan2)
-        return render_template('user.html', name = name, transElement= transWord, wordElement = word)
-    return render_template('user.html', name = name)
+        ATB.add_word_to_tabel(id,word)
+        element_list = ATB.all_element(id)
+        return render_template('user.html', name = id, transElement= transWord, wordElement = word ,element_list =element_list)
+    return render_template('user.html', name = id)
 
 
 @app.route('/login', methods = ['GET', 'POST'])
