@@ -16,6 +16,8 @@ def creat_user(email,password,name):
 def user_registration(passwordOne,passswordSecond,email,name):
         if passwordOne != passswordSecond:
             return render_template('registration.html' , error = 'Hasła nie są takie same' )
+        elif len(passwordOne)<8:
+            return render_template('registration.html', error='Hasła jest za krótkie')
         elif email =="":
             return render_template('registration.html', error='podaj email')
         elif name =="":
