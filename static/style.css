@@ -30,6 +30,13 @@
       text-align: center;
       color: darkred;
       text-transform: uppercase; }
+    .wrapper .login .correct {
+      position: relative;
+      top: 40px;
+      font-size: 1.5rem;
+      text-align: center;
+      color: black;
+      text-transform: uppercase; }
     .wrapper .login .userLogin {
       margin-top: 10px;
       display: flex;
