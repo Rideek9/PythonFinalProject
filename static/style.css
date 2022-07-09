@@ -101,12 +101,20 @@ div a i {
     text-align: center;
     color: #fff;
     margin-bottom: 50px; }
+  .conteiner p {
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: lighter;
+    text-align: center;
+    color: #ffffff;
+    height: 80px;
+    line-height: 80px; }
   .conteiner .rejestration {
     display: flex;
     flex-direction: column;
     width: 40%;
     margin: 0 auto; }
-    .conteiner .rejestration label {
+    .conteiner .rejestration .userRejstration label {
       font-size: 2rem;
       display: block;
       text-align: center;
@@ -115,13 +123,13 @@ div a i {
       color: #fff;
       text-transform: uppercase;
       font-weight: lighter; }
-    .conteiner .rejestration input {
+    .conteiner .rejestration .userRejstration input {
       font-size: 2rem;
       padding: 5px;
       width: 100%;
       text-align: center;
       border-radius: 20px; }
-    .conteiner .rejestration .buttonRegistration {
+    .conteiner .rejestration .userRejstration .buttonRegistration {
       display: block;
       font-size: 2rem;
       padding: 5px 20px;
@@ -133,7 +141,7 @@ div a i {
       border-radius: 15px;
       text-transform: uppercase;
       cursor: pointer; }
-    .conteiner .rejestration .buttonRegistration:hover {
+    .conteiner .rejestration .userRejstration .buttonRegistration:hover {
       background-color: red; }
 
 /*# sourceMappingURL=style.css.map */
